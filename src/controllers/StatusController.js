@@ -1,7 +1,14 @@
 const mongodb = require("../config/mongodb");
 
+const runMiddleware = require('expmidd');
+const Cors = require('cors');
+
+const cors = Cors({
+  methods: ['GET'],
+});
 class StatusController {
   async show(req, res) {
+    await runMiddleware(req, res, cors);
     res.status(200);
     res.json({
       status: "online",
