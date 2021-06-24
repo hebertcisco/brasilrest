@@ -23,7 +23,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
-    "expmidd": "^0.2.0",
+    "expmidd": "^0.1.0",
     "express": "^4.17.1",
     "mongoose": "^5.6.7",
     "node-fetch": "^2.6.0"
